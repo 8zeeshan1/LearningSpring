@@ -16,7 +16,6 @@ public class DemoApplication implements CommandLineRunner  { // this interface l
 	}
 	final private UserService svc;
 
-
 	@Override
 	public void run(String... args) throws Exception {
 		svc.saveUser("Zeeshan");
