@@ -1,17 +1,19 @@
 package com.demo.demo.dto;
 
+import java.rmi.server.UID;
+
 public class UserDto {
-    private String id;
+    private long id;
     private String email;
     private String name;
 
-    public UserDto(String id, String email, String name) {
+    public UserDto(long id, String email, String name) {
         this.id = id;
         this.email = email;
         this.name = name;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
@@ -23,7 +25,7 @@ public class UserDto {
         return name;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
